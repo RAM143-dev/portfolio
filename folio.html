@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+    }
+
+    .sidebar {
+      background-color: #2ecbcc;
+      height: auto-;
+      min-height: 820px;
+      padding: 20px;
+      color: #000;
+    }
+
+    #im {
+      height: 150px;
+      width: 150px;
+      border-radius: 25%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    #name {
+      text-align: center;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .h {
+      display: inline-block;
+      background-color: yellow;
+      font-weight: bold;
+      padding: 2px 5px;
+    }
+
+    tr,
+    td {
+      padding: 5px;
+    }
+
+    .top {
+      background: linear-gradient(135deg, #b6e0a4, #ace2ff);
+      padding: 40px;
+      min-height: 100vh;
+    }
+
+    .top h2 {
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .top p {
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    hr {
+      border: 1px solid white;
+    }
+
+    .img-fluid {
+      display: block;
+      margin: 20px auto;
+    }
+
+    .card {
+      transition: 0.3s;
+      border: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      background: #ffffff;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-body {
+      text-align: center;
+    }
+
+    .card img {
+      height: 200px;
+      
+    }
+
+/* mobile view */
+
+    @media (max-width: 767px) {
+  .sidebar {
+    min-height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #im {
+    height: 100px;
+    width: 100px;
+  }
+
+  #name {
+    font-size: 20px;
+  }
+
+  table {
+    width: 100%;
+    margin: auto;
+  }
+
+  .top {
+    padding: 20px;
+  }
+
+  .top h2 {
+    font-size: 24px;
+  }
+
+  .top p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .img-fluid {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .card {
+    margin-bottom: 15px;
+  }
+
+  /* DO NOT change card image size */
+  /* .card img size remains as is */
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2 sidebar">
+        <img id="im" src="ram.jpg" alt="Profile Image" />
+        <h3 id="name">ESAKKI RAM K</h3>
+        <hr />
+        <section>
+          <table>
+            <tr><td class="h">AGE:</td><td>20</td></tr>
+            <tr><td class="h">FREELANCE:</td><td>Available</td></tr>
+            <tr><td class="h">Address:</td><td>76/87 Kamatchi Street, Shengottai</td></tr>
+            <tr>
+              <td class="h">LINKEDIN:</td>
+              <td><a href="https://www.linkedin.com/in/k-esakki-ram-887998258/">My Profile</a></td>
+            </tr>
+            <tr> <td class="h">GITHUB:</td>
+            <td><a href="https://github.com/RAM143-dev?tab=repositories">github link</a></td></tr>
+          </table>
+          <hr />
+        </section>
+        <section>
+          <h4 style="text-decoration: underline">Language</h4>
+          <ul><li>Tamil</li><li>English</li></ul>
+          <hr />
+        </section>
+        <section>
+          <h4 style="text-decoration: underline">Skills</h4>
+          <ul>
+            <li>JAVA</li><li>C</li><li>PYTHON</li><li>HTML 5</li>
+            <li>CSS 3</li><li>JAVASCRIPT</li><li>DJANGO</li>
+          </ul>
+          <hr />
+        </section>
+        <section>
+          <h4 style="text-decoration: underline">Extra-curriculum</h4>
+          <ul>
+            <li>BADMINTON</li><li>RUNNING</li><li>SHOOTING</li>
+          </ul>
+          <hr />
+        </section>
+      </div>
+
+      <div class="col-md-10 top">
+        <div class="row align-items-center mb-4">
+          <div class="col-md-6">
+            <h2>I'm Esakkiram<br />Front-end Developer</h2>
+            <p>
+              Passionate about crafting modern, responsive websites. Skilled in HTML, CSS, JavaScript,
+              and frameworks like Django. I focus on user-centered design and clean, efficient code to
+              create seamless digital experiences.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="ram.jpg" alt="Developer Image" class="img-fluid rounded" style="width: 300px; height: 300px;">
+          </div>
+        </div>
+
+        <center><h2 style="text-decoration: underline;">MY SERVICES</h2></center>
+        <br>
+
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="html.jpeg" class="card-img-top" alt="HTML5">
+                <div class="card-body">
+                  <p class="card-text">Building semantic and well-structured web pages using HTML5.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="css.jpeg" class="card-img-top" alt="CSS3">
+                <div class="card-body">
+                  <p class="card-text">Designing stylish, responsive layouts with modern CSS techniques.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="js.png" class="card-img-top" alt="JavaScript">
+                <div class="card-body">
+                  <p class="card-text">Interactive functionality and dynamic behavior with JavaScript.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="python.jpeg" class="card-img-top" alt="Python">
+                <div class="card-body">
+                  <p class="card-text">Data processing, scripting, and backend logic with Python.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="django.png" class="card-img-top" alt="Django">
+                <div class="card-body">
+                  <p class="card-text">Web app development using Django framework with Python.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100">
+                <img src="java.png" class="card-img-top" alt="Java">
+                <div class="card-body">
+                  <p class="card-text">Building object-oriented applications and software using Java.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> 
+    </div> 
+  </div> 
+</body>
+
+</html>
